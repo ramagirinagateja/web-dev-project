@@ -1,3 +1,28 @@
 h1{
     color:red;
 }
+.box{
+    width: 400px;
+    text-align: center;
+    border: 3px solid black;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 400px;
+    margin-top: 100px;
+    margin-bottom: auto;
+
+}
+body{
+    background-color: rgb(168, 141, 108);
+    text-align: center;
+}
+.box img{
+    width:100%;
+}
+.box button{
+    width:150px;
+    height: 40px;
+    border-radius:20px ;
+    margin:5px;
+}
