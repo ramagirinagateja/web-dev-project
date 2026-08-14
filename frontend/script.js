@@ -30,5 +30,16 @@ btn.addEventListener("click",function(){
 let rdm=document.getElementById("random");
 rdm.addEventListener("click",function(){
     //url:https://randomuser.me/api
-    fetch("https://randomuser.me/api ");
+    fetch("https://randomuser.me/api ")
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        var details=data.results[0];
+        document.getElementById("img").src=details.picture.large;
+        document.getElementById("gender").innerText=details.gender;
+        var fullname=details.name.first +" "+details.name.last;
+        document.getElementById("name").innerText=fullname;
+    })
+    
 });
